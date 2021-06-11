@@ -1,9 +1,19 @@
 from strings import *
+from Customer import Customer
 
 print(mainMenu)
-userInput = int(input("select what do you want "))
+userInput = int(input(" "))
+
 if userInput == 1:
-	print("list of customers")
-	print()
+    Customer.showCustomer()
+    print(customerInfoMenu)
+
+    userInput = int(input(""))
+    if userInput == 1:
+        print("введите номер покупателя")
+        userInput = int(input(" "))
+        Customer.changeCustomer()
+
+
 elif userInput == 2:
-	print("")
+    print("")
