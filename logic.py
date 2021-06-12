@@ -16,6 +16,29 @@ def create_customer():
 	new_customer = Customer(customer_name,customer_surname,customer_address, customer_id)
 	customers.append(new_customer.__dict__)
 
+def change_customer(id):
+	for customer in customers:
+			if customer['id'] == id:
+				print(customer)
+				print("выберите что хотите сделать")
+				print(customerChangeInfo)
+				user_input = int(input(" "))
+
+				if user_input == 1:
+					print(enter_new_name)
+					user_input = input(" ")
+					customer['name'] = user_input
+
+				elif user_input == 2:
+					print(enter_new_surname)
+					user_input = input(" ")
+					customer['surname'] = user_input	
+
+				elif user_input == 3:
+					print(enter_new_address)
+					user_input = input(" ")
+					customer['address'] = user_input
+
 def show_customers():
 	print(devider)
 
@@ -35,10 +58,10 @@ if userInput == 1:
 	userInput = int(input(""))
 	if userInput == 1:
 		print("введите номер покупателя")
-#	show_customers()
+		show_customers()
 		userInput = int(input(" ")) - 1
+		change_customer(id=userInput)
 
-		Customer.changeCustomer(id=userInput)
 	elif userInput == 2:
 		create_customer()
 

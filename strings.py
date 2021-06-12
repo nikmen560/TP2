@@ -29,5 +29,9 @@ customerChangeInfo = '''
 3. изменить адрес
 '''
 
+enter_new_name = 'введите новое имя'
+enter_new_surname = 'введите новую фамилию'
+enter_new_address = 'введите новый адрес'
+
 file_name = 'data.json'
 file_path = 'data.json'
