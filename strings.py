@@ -23,6 +23,11 @@ customerInfoMenu = '''
 # ================================
 # change user
 
-customerChangeName = '''
-изменить имя
+customerChangeInfo = '''
+1. изменить имя
+2. изменить фамилию
+3. изменить адрес
 '''
+
+file_name = 'data.json'
+file_path = 'data.json'
