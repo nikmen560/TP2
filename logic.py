@@ -1,6 +1,6 @@
 from strings import *
-from db import customers
 from Customer import Customer
+from File import File
 # from data import customers
 
 # data = customers
@@ -8,62 +8,34 @@ from Customer import Customer
 	# Customer.create_customer(data)
 	# File.write(file_path)
 
-def create_customer():
-	customer_name = input('введите имя ')
-	customer_surname = input('введите фамилию ')
-	customer_address = input('введите адрес ')
-	customer_id = len(customers)
-	new_customer = Customer(customer_name,customer_surname,customer_address, customer_id)
-	customers.append(new_customer.__dict__)
+customers = File.read('data.json', 'data.json')[0]
 
-def change_customer(id):
-	for customer in customers:
-			if customer['id'] == id:
-				print(customer)
-				print("выберите что хотите сделать")
-				print(customerChangeInfo)
-				user_input = int(input(" "))
+def change_customer():
+	print(customerChangeInfo)
+	Customer.change_customer(customers)
 
-				if user_input == 1:
-					print(enter_new_name)
-					user_input = input(" ")
-					customer['name'] = user_input
+	
+	
 
-				elif user_input == 2:
-					print(enter_new_surname)
-					user_input = input(" ")
-					customer['surname'] = user_input	
+while True:
 
-				elif user_input == 3:
-					print(enter_new_address)
-					user_input = input(" ")
-					customer['address'] = user_input
+	print(mainMenu)
+	userInput = int(input(" "))
 
-def show_customers():
-	print(devider)
-
-	# read from file all customers
-
-	for customer in customers:
-		print(f"#{customer['id'] + 1} - {customer['name']} {customer['surname']} address: {customer['address']}")
-
-
-print(mainMenu)
-userInput = int(input(" "))
-
-if userInput == 1:
-	show_customers()
-	print(customerInfoMenu)
-
-	userInput = int(input(""))
 	if userInput == 1:
-		print("введите номер покупателя")
-		show_customers()
-		userInput = int(input(" ")) - 1
-		change_customer(id=userInput)
+		Customer.show_customer(customers)
+		print(customerInfoMenu)
 
-	elif userInput == 2:
-		create_customer()
+		userInput = int(input(""))
+		if userInput == 1:
+			change_customer()
 
-# elif userInput == 2:
-#     print('')
+		elif userInput == 2:
+			Customer.create_customer(data=customers)
+
+	# elif userInput == 2:
+	#     print('')
+
+
+
+

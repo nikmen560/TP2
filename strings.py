@@ -28,10 +28,13 @@ customerChangeInfo = '''
 2. изменить фамилию
 3. изменить адрес
 '''
+create_new_customer_name = 'введите имя '
+create_new_customer_surname = 'введите фамилию '
+create_new_customer_address = 'введите адрес '
 
-enter_new_name = 'введите новое имя'
-enter_new_surname = 'введите новую фамилию'
-enter_new_address = 'введите новый адрес'
+customer_new_name = 'введите новое имя'
+customer_new_surname = 'введите новую фамилию'
+customer_new_address = 'введите новый адрес'
 
 file_name = 'data.json'
 file_path = 'data.json'

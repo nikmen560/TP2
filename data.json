@@ -1,16 +1,123 @@
 [
   [
     {
-      "name": "nik",
-      "surname": "kent",
-      "address": "smolevichi",
+      "name": "Andrey",
+      "surname": "Ivanov",
+      "address": "Vitebsk",
       "id": 0
     },
     {
-      "name": "kent",
-      "surname": "dagestanov",
-      "address": "smolevichi",
+      "name": "Dmitry",
+      "surname": "Petrov",
+      "address": "Minsk",
       "id": 1
+    },
+    {
+      "name": "Mariya",
+      "surname": "Grinina",
+      "address": "Grodno",
+      "id": 2
+    },
+    {
+      "name": "Petr",
+      "surname": "Zaharov",
+      "address": "Brest",
+      "id": 3
+    },
+    {
+      "name": "Gosha",
+      "surname": "Rubchinski",
+      "address": "Smolevichi",
+      "id": 4
+    },
+    {
+      "name": "Antonio",
+      "surname": "Ivashkin",
+      "address": "Moscow",
+      "id": 5
+    }
+  ],
+  [
+    {
+      "value": 99,
+      "location_id": 0,
+      "diver_id": 2,
+      "date": "06.06.2021",
+      "id": 0
+    },
+    {
+      "value": 240,
+      "location_id": 0,
+      "diver_id": 1,
+      "date": "06.06.2021",
+      "id": 1
+    },
+    {
+      "value": 66,
+      "location_id": 1,
+      "diver_id": 0,
+      "date": "10.01.2000",
+      "id": 2
+    },
+    {
+      "value": 68,
+      "location_id": 3,
+      "diver_id": 0,
+      "date": "11.11.2011",
+      "id": 3
+    },
+    {
+      "value": 130,
+      "location_id": 2,
+      "diver_id": 1,
+      "date": "11.01.2001",
+      "id": 4
+    },
+    {
+      "value": 300,
+      "location_id": 3,
+      "diver_id": 1,
+      "date": "01.01.1997",
+      "id": 5
+    },
+    {
+      "value": 200,
+      "location_id": 1,
+      "diver_id": 2,
+      "date": "12.12.2017",
+      "id": 6
+    },
+    {
+      "value": 0,
+      "location_id": 0,
+      "diver_id": 1,
+      "date": "01.01.1998",
+      "id": 7
+    },
+    {
+      "value": 20,
+      "location_id": 1,
+      "diver_id": 2,
+      "date": "23.01.2020",
+      "id": 8
+    }
+  ],
+  [
+    {
+      "name": "Black Sea",
+      "id": 0
+    },
+    {
+      "name": "Atlantic Ocean",
+      "id": 1
+    },
+    {
+      "name": "Mediterranean Sea",
+      "id": 2
+    },
+    {
+      "name": "Red Sea",
+      "id": 3
     }
   ]
 ]
